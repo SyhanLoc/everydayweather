@@ -2,6 +2,7 @@
     background: #159957;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #155799, #159957); 
+    color: white;
 }
 .block{
     background-color: #008fb3;
