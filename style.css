@@ -1,0 +1,27 @@
+.navbar {
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957); 
+}
+.block{
+    background-color: #008fb3;
+    opacity: .65;
+    color: white;
+    padding: 33px;
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 11px;
+    font-size: 1.5em;
+    padding-bottom: 5%;
+}
+
+.spacer{
+    padding: 5%;
+}
+
+body {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    
+}
