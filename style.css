@@ -3,8 +3,14 @@
     background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #155799, #159957); 
 }
+#title {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2em;
+
+}
 .block{
-    background-color: #008fb3;
+    background: #008fb3;
     opacity: .65;
     color: white;
     padding: 33px;

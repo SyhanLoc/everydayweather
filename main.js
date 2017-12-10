@@ -30,7 +30,8 @@ $(function(){
                 ];
             */
             
-            /*this will display the temperature but not from the API, if C is a false which is the defaul, if C is true it will give us the degree in Celsius. It is looking for integer
+            /*this will display the temperature but not from the API, if C is a false which is the defaul, 
+            if C is true it will give us the degree in Celsius. It is looking for integer
             */
             function displayTemp (F,C){
                 if(C) return Math.round((F-32)*(5/9)) + "&deg; C";
@@ -49,19 +50,19 @@ $(function(){
                 $("#currentWeather").html(currentWeather);
                 $("#currentWind").html(currentWind);
                 $("#currentHum").html(currentHum);
-                
-                var apiIcon = "https://openweathermap.org/img/w/" + icon + ".png"; /*get icon code and insert onto end of html + .png to get correnct img icon*/
+                /*get icon code and insert onto end of html + .png to get correnct img icon*/
+                var apiIcon = "https://openweathermap.org/img/w/" + icon + ".png"; 
                 $("#currentTemp").prepend("<img src =" + apiIcon + ">");
             }
             /* get JSON location from freegeoip, once it's done, run a function, take one argument called location*/
             
             $.getJSON("https://freegeoip.net/json/").done(function(location){
             //     console.log(location); 
-                        $("#country").html(location.country_name);
-                        $("#city").html(location.city);
-                        $("#latitude").html(location.latitude);
-                        $("#longitude").html(location.longitude);
-                        $("#wind").html(location.wind);
+                $("#country").html(location.country_name);
+                $("#city").html(location.city);
+                $("#latitude").html(location.latitude);
+                $("#longitude").html(location.longitude);
+                $("#wind").html(location.wind);
                         
     /*concatnate a string to make it a variable. 
     I have to feed them witht he weather. API and then a ? to say there is a data coming. Use imerial because we want farenheit. after api, create a functio with data*/
@@ -87,10 +88,7 @@ $(function(){
                 bgIndex = backgroundId.sort().indexOf(id);
                 
                 $('body').css('background-image', 'url(' + backgroundImg[bgIndex] + ')');
-                
-                
             }) 
-
             })
     
 })
