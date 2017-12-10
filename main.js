@@ -1,13 +1,13 @@
 /* global $ APIKEY c*/
-/*global backgroundImg location currentTemp icon*/
+/*global backgroundImg location currentTemp icon config*/
 
 
 $(function(){
     /*global API*/
             var C = false;
             var apiData;
-            
-            
+            var mykey = config.MY_KEY;
+
             backgroundImg = [
                 /*thunderstom*/"https://dsx.weather.com//util/image/w/thunderstormasthma.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
                 /*drizzle rain*/"https://www.eastbaytimes.com/wp-content/uploads/2016/10/sjm-morerain-1017-23.jpg?w=620",
@@ -60,7 +60,7 @@ $(function(){
                         
     /*concatnate a string to make it a variable. 
     I have to feed them witht he weather. API and then a ? to say there is a data coming. Use imerial because we want farenheit. after api, create a functio with data*/
-            $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat='+location.latitude+'&lon='+location.longitude+'&units=imperial&appid=b2ce7b897c33473165e45bfae65201f2', function(data)
+            $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat='+location.latitude+'&lon='+location.longitude+'&units=imperial&appid=' + mykey, function(data)
             {
                 apiData=data;
                 // console.log(apiData); it works!
