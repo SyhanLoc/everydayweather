@@ -39,12 +39,16 @@ $(function(){
             /*where it's going to display */
             function render (data, C){
                 var currentWeather = data.weather[0].description;
+                var currentWind = data.wind.speed;
+                var currentHum = data.main.humidity;
                 var currentTemp = displayTemp(data.main.temp,C);/*displayTemp is looking for my degree and F, I can feed the information to function displayTemp by putting ()*/
                 var icon = data.weather[0].icon;
                 
             /*overwrite the html*/    
                 $("#currentTemp").html(currentTemp);
                 $("#currentWeather").html(currentWeather);
+                $("#currentWind").html(currentWind);
+                $("#currentHum").html(currentHum);
                 
                 var apiIcon = "https://openweathermap.org/img/w/" + icon + ".png"; /*get icon code and insert onto end of html + .png to get correnct img icon*/
                 $("#currentTemp").prepend("<img src =" + apiIcon + ">");
@@ -57,6 +61,7 @@ $(function(){
                         $("#city").html(location.city);
                         $("#latitude").html(location.latitude);
                         $("#longitude").html(location.longitude);
+                        $("#wind").html(location.wind);
                         
     /*concatnate a string to make it a variable. 
     I have to feed them witht he weather. API and then a ? to say there is a data coming. Use imerial because we want farenheit. after api, create a functio with data*/
