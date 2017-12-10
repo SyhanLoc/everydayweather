@@ -9,13 +9,14 @@ $(function(){
             var C = false;
             var apiData;
             
+            
             backgroundImg = [
                 /*thunderstom*/"https://dsx.weather.com//util/image/w/thunderstormasthma.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
                 /*drizzle rain*/"https://www.eastbaytimes.com/wp-content/uploads/2016/10/sjm-morerain-1017-23.jpg?w=620",
                 /*rain*/"https://images.gmanews.tv/webpics/2015/09/640_rainfall_2015_09_14_11_23_49.jpg",
                 /*snow storm*/"http://i2.wp.com/www.bikinginmpls.com/wp-content/uploads/2015/11/winter.jpeg?resize=858%2C488",
-                "https://www.theaa.com/~/media/the-aa/article-summaries/driving-advice/fog.jpg?h=400&w=640&hash=685991001A7B12CF60994E0655CA3B7638BF5BBC&la=en",
-                "https://i0.wp.com/snehaschoice.com/wp-content/uploads/2016/03/clear-sky-on-a-sunny-day-1255-1366x768.jpg",
+                /*foggy*/"https://www.theaa.com/~/media/the-aa/article-summaries/driving-advice/fog.jpg?h=400&w=640&hash=685991001A7B12CF60994E0655CA3B7638BF5BBC&la=en",
+                /*clear sky*/"https://i0.wp.com/snehaschoice.com/wp-content/uploads/2016/03/clear-sky-on-a-sunny-day-1255-1366x768.jpg",
                 "http://allswalls.com/images/cloudy-sky-wallpaper-7.jpg",
                 ]
                 
