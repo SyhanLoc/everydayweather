@@ -1,5 +1,5 @@
+
 .navbar {
-    background: #159957;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #155799, #159957); 
 }
@@ -7,11 +7,12 @@
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 2em;
+    color: #FFDD33;
 
 }
 .block{
     background: #008fb3;
-    opacity: .65;
+    opacity: .80;
     color: white;
     padding: 33px;
     width:50%;
@@ -26,8 +27,12 @@
     padding: 5%;
 }
 
-body {
-    background: no-repeat center center fixed;
-    -webkit-background-size: cover;
-    
+body{ 
+
+  background:no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
